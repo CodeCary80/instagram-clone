@@ -29,8 +29,21 @@ const posts = [
 ]
 
 
-const mainContainer = document.getElementById("main-container")
+const mainContainer = document.getElementById("main-container");
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
 
+themeToggle.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+    
+    if(body.classList.contains('dark-mode')) {
+        themeToggle.src = "images/moon.png";
+    } else {
+        themeToggle.src = "images/sunny.png";
+    }
+});
+
+renderPosts()
 
 function renderPosts(){
     let postHtml = "";
@@ -61,10 +74,9 @@ function renderPosts(){
             </section>
         `
     }
-        mainContainer.innerHTML += postHtml;
+        mainContainer.insertAdjacentHTML("beforeend", postHtml);
 }
 
-renderPosts()
 
 mainContainer.addEventListener("click",function(e){
     if(e.target.classList.contains("icon-heart")){
@@ -83,3 +95,5 @@ mainContainer.addEventListener("click",function(e){
     }
   }
 })
+
+

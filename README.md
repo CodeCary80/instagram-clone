@@ -2,6 +2,8 @@
 
 A lightweight Instagram-style social media feed featuring classical artists and their posts.
 
+Live: https://oldagramcary80.netlify.app/
+
 ## 📸 About
 
 Oldagram is a front-end project that recreates the Instagram user interface with a creative twist - it features famous classical artists like Vincent van Gogh, Gustave Courbet, and Joseph Ducreux sharing humorous posts about their artwork.
