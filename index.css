@@ -112,6 +112,9 @@ html, body {
     margin-right: 5px; 
 }
 
+#theme-toggle{
+        cursor: pointer;
+}
 /* Dark mode styles */
 body.dark-mode {
     background-color: #000;
